@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>CEP - ViaCEP API</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script src="scripts.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <p> CEP API </p>
+            <div class="search">
+                <label for="cep">CEP</label><br>
+                <input name="cep" type="text" id="cep" maxlength="9" placeholder="Formato: 00000000">
+            </div>
+            <div class="divisoria">
+                <hr>
+            </div>
+            <label for="rua">Rua</label><br>
+            <input name="rua" type="text" id="rua" disabled><br>
+            <label for="complemento">Complemento</label>
+            <input name="complemento" type="text" id="complemento" size="8" disabled><br>
+            <label for="bairro">Bairro</label>
+            <input name="bairro" type="text" id="bairro" disabled><br>
+            <label for="cidade">Cidade</label>
+            <input name="cidade" type="text" id="cidade" disabled><br>
+            <label for="estado">Estado</label>
+            <input name="uf" type="text" id="uf" disabled>
+            <div class="divisoria">
+                <hr>
+            </div>
+            <div class="footer">
+                <a href="https://viacep.com.br" target="_blank">API</a> |
+                <a href="https://github.com/guisoaresz" target="_blank">Github</a>
+            </div>
+            <div class="buttons">
+                <button type="button" onclick="pesquisaCEP(cep.value)">Enviar</button>
+                <button type="button" onclick="clearInfo()">Limpar</button>
+            </div>
+        </div>
+    </body>
+</html>
