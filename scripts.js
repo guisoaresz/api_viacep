@@ -16,7 +16,7 @@ function cepApi(conteudo) {
         document.getElementById('uf').value=(conteudo.uf);
     }
     else {
-        limpa_formulário_cep();
+        clearInfo();
         alert("CEP não encontrado.");
     }
 }
